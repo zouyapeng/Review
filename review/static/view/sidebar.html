@@ -1,0 +1,19 @@
+<div>
+    <div class="header-logo">
+        <div ng-if="auth.authenticated">
+            <a ui-sref="layout.signout" tooltip-placement="left" tooltip='退出登陆' class="pull-right"><i class="glyphicon glyphicon-off"></i></a>
+            {[auth.user.username]}
+        </div>
+    </div>
+    <ul ng-if="auth.authenticated" class="list-unstyled page-sidebar-menu">
+        <li ng-class="{active: $state.includes('layout.cdos')}">
+            <a href="javascript:;" title="Dashboard" >
+                <i class="fa fa-desktop"></i> cdos <span class="selected"></span>
+            </a>
+            <ul class="list-unstyled sub-menu">
+                <li ng-class="{active: $state.includes('layout.cdos.pending')}"><a ui-sref="layout.cdos.pending.software">待测试</a></li>
+                <li ng-class="{active: $state.includes('layout.cdos.stable')}"><a ui-sref="layout.cdos.stable.software">稳定版</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

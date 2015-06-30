@@ -1,0 +1,49 @@
+<table class="table table-condensed table-bordered table-striped">
+  <tr>
+        <th>名称</th>
+
+        <th class="col-xs-2">用户</th>
+        <th class="col-xs-2">完成的时间</th>
+        <th class="col-xs-1">测试状态</th>
+        <th ng-if="auth.user.user_type" class="col-xs-2">操作</th>
+    </tr>
+    <tr ng-repeat="obj in resource.items">
+        <td><a ng-href="{[CBS_URL]}cbs/buildinfo?buildID={[obj.build_id]}">{[obj.nvr]}</a></td>
+        <td>{[obj.owner_name]}</td>
+        <td>{[obj.completion_time.split('.')[0]]}</td>
+	    <td >
+            <div ng-if="obj.status" ng-switch on="obj.status">
+                <span ng-switch-when="invalid">没有这个包</span>
+                <span ng-switch-when="finished">已通过</span>
+                <span ng-switch-when="running">测试中</span>
+                <span ng-switch-when="pending">待测试</span>
+                <span ng-switch-default >加载中</span>
+            </div>
+        </td>
+        <td ng-if="auth.user.user_type" >
+            <div>
+                <button ng-click="test_pass(obj)" ng-if="!obj.loading" type="button" class="pass btn btn-xs btn-primary">
+                    测试通过
+                </button>
+                <progressbar animate="false" ng-if="obj.loading" value="obj.progress" ></progressbar>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+<div ng-show="resource&&resource.total_count>=0" class="text-right">
+    <div class="pull-left">
+        <span>第 <b>{[resource.start]}</b>–<b>{[resource.offset>resource.total_count?resource.total_count:resource.offset]}</b> 个，共 <b>{[resource.total_count]}</b> 个</span>
+    </div>
+      <pagination
+              total-items="resource.total_count"
+              ng-model="currentPage"
+              items-per-page="resource.limit"
+              max-size="5"
+              class="pagination-sm"
+              boundary-links="true"
+              ng-change="resource.goPage(true, currentPage)"
+              rotate="false"
+              num-pages="numPages"></pagination>
+</div>

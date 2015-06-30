@@ -1,0 +1,114 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 5 (0x5)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=CN, ST=Shanghai, L=Shanghai, O=Linux, CN=cbs/emailAddress=cbsadmin@xxx.com
+        Validity
+            Not Before: Nov 25 10:11:30 2014 GMT
+            Not After : Nov 22 10:11:30 2024 GMT
+        Subject: C=CN, ST=Shanghai, O=Linux, CN=cbsadmin/emailAddress=cbsadmin@xxx.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:e2:2d:e3:fe:07:ee:a0:e8:bb:63:b8:c1:93:67:
+                    72:10:4e:8e:3a:37:96:43:12:6e:18:62:25:15:1b:
+                    9e:dc:cc:11:9d:f1:bf:03:45:1d:df:35:2f:c1:c6:
+                    66:fe:e1:47:c9:74:7e:2f:89:c3:14:16:d4:e0:39:
+                    0b:ce:54:7b:ec:c7:22:d1:2a:41:ce:98:86:8d:0b:
+                    a6:9e:28:6b:10:68:07:b2:36:d4:12:6e:df:4a:00:
+                    78:a3:46:94:c2:c1:a3:5d:e0:d4:8d:b4:7b:25:67:
+                    a2:db:f7:cf:b8:84:e5:0c:29:81:9e:71:95:d0:37:
+                    04:59:04:9d:17:ef:a7:42:04:37:37:c6:17:1e:ae:
+                    f4:22:35:04:45:1c:30:e3:27:a5:e7:ef:68:c9:31:
+                    e1:ea:c9:4c:e7:8a:b2:5d:b0:09:af:ac:13:de:37:
+                    1d:83:28:4e:e2:2e:15:6a:89:97:6e:3b:55:98:01:
+                    ac:5d:25:a6:c9:6b:a5:0c:78:57:b6:7a:21:d8:08:
+                    68:f6:28:f8:b7:aa:2e:5d:9a:08:1a:80:3c:b2:70:
+                    a0:1e:d1:29:73:9d:ca:1c:21:1e:fb:21:9b:71:06:
+                    ca:b5:76:d7:c3:62:de:52:9d:a9:6c:a2:2a:95:5a:
+                    a1:58:7b:fd:b9:eb:1a:58:b6:5b:fd:b1:90:2a:27:
+                    e1:43
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                F2:EE:E0:A2:16:F7:EF:29:F9:A8:5F:62:5B:92:13:A1:F8:EE:E7:55
+            X509v3 Authority Key Identifier: 
+                keyid:82:BA:43:DE:90:23:D8:37:C6:DC:15:76:9F:61:32:1A:4B:3A:85:AA
+                DirName:/C=CN/ST=Shanghai/L=Shanghai/O=Linux/CN=cbs/emailAddress=cbsadmin@xxx.com
+                serial:A4:47:54:A1:06:91:A0:2F
+
+    Signature Algorithm: sha256WithRSAEncryption
+         96:15:59:85:1e:88:58:e4:08:c8:d6:02:a5:41:4e:6e:08:d0:
+         7d:e9:16:5a:fa:45:01:76:c3:62:82:9d:64:ba:7f:83:d4:c2:
+         90:7a:5a:04:96:48:d5:04:e6:e4:a5:38:51:6c:3c:e6:4e:81:
+         ce:60:95:10:eb:c7:6d:c3:b5:5d:3b:5f:e7:b5:37:a5:11:dc:
+         59:ef:65:26:9b:c7:fd:2d:41:eb:d5:16:da:ef:a0:30:7b:f4:
+         62:bd:d3:5e:99:11:1a:f9:b7:93:38:4c:d4:f3:41:12:9a:ee:
+         c2:c5:30:c8:aa:43:1c:8b:65:69:d2:9c:e8:85:bb:63:2c:33:
+         c6:78:d5:4f:dc:76:eb:b5:66:73:73:71:fe:5b:e5:7b:e9:11:
+         ff:78:d9:95:05:00:ba:55:8c:89:14:f7:af:15:6e:29:a3:4f:
+         dd:a2:1e:02:58:39:bc:c0:e5:39:79:fb:7f:e4:2c:d9:85:3d:
+         5d:a2:ef:8d:14:f8:66:07:5e:48:c2:3b:08:2d:b5:d2:45:68:
+         6c:0c:03:b3:a0:47:7b:8e:69:a7:26:ad:ec:4b:2d:98:a0:02:
+         14:c5:3c:f7:96:74:a8:80:53:97:93:84:21:c1:53:09:95:88:
+         78:e8:e0:ef:58:f9:ab:33:31:7d:bb:0b:3c:89:3a:40:9a:02:
+         30:db:4e:1a
+-----BEGIN CERTIFICATE-----
+MIIEVTCCAz2gAwIBAgIBBTANBgkqhkiG9w0BAQsFADByMQswCQYDVQQGEwJDTjER
+MA8GA1UECBMIU2hhbmdoYWkxETAPBgNVBAcTCFNoYW5naGFpMQ4wDAYDVQQKEwVM
+aW51eDEMMAoGA1UEAxMDY2JzMR8wHQYJKoZIhvcNAQkBFhBjYnNhZG1pbkB4eHgu
+Y29tMB4XDTE0MTEyNTEwMTEzMFoXDTI0MTEyMjEwMTEzMFowZDELMAkGA1UEBhMC
+Q04xETAPBgNVBAgTCFNoYW5naGFpMQ4wDAYDVQQKEwVMaW51eDERMA8GA1UEAxMI
+Y2JzYWRtaW4xHzAdBgkqhkiG9w0BCQEWEGNic2FkbWluQHh4eC5jb20wggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDiLeP+B+6g6LtjuMGTZ3IQTo46N5ZD
+Em4YYiUVG57czBGd8b8DRR3fNS/Bxmb+4UfJdH4vicMUFtTgOQvOVHvsxyLRKkHO
+mIaNC6aeKGsQaAeyNtQSbt9KAHijRpTCwaNd4NSNtHslZ6Lb98+4hOUMKYGecZXQ
+NwRZBJ0X76dCBDc3xhcervQiNQRFHDDjJ6Xn72jJMeHqyUznirJdsAmvrBPeNx2D
+KE7iLhVqiZduO1WYAaxdJabJa6UMeFe2eiHYCGj2KPi3qi5dmggagDyycKAe0Slz
+ncocIR77IZtxBsq1dtfDYt5SnalsoiqVWqFYe/256xpYtlv9sZAqJ+FDAgMBAAGj
+ggECMIH/MAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJh
+dGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBTy7uCiFvfvKfmoX2JbkhOh+O7nVTCB
+pAYDVR0jBIGcMIGZgBSCukPekCPYN8bcFXafYTIaSzqFqqF2pHQwcjELMAkGA1UE
+BhMCQ04xETAPBgNVBAgTCFNoYW5naGFpMREwDwYDVQQHEwhTaGFuZ2hhaTEOMAwG
+A1UEChMFTGludXgxDDAKBgNVBAMTA2NiczEfMB0GCSqGSIb3DQEJARYQY2JzYWRt
+aW5AeHh4LmNvbYIJAKRHVKEGkaAvMA0GCSqGSIb3DQEBCwUAA4IBAQCWFVmFHohY
+5AjI1gKlQU5uCNB96RZa+kUBdsNigp1kun+D1MKQeloElkjVBObkpThRbDzmToHO
+YJUQ68dtw7VdO1/ntTelEdxZ72Umm8f9LUHr1Rba76Awe/RivdNemREa+beTOEzU
+80ESmu7CxTDIqkMci2Vp0pzohbtjLDPGeNVP3HbrtWZzc3H+W+V76RH/eNmVBQC6
+VYyJFPevFW4po0/doh4CWDm8wOU5eft/5CzZhT1dou+NFPhmB15IwjsILbXSRWhs
+DAOzoEd7jmmnJq3sSy2YoAIUxTz3lnSogFOXk4QhwVMJlYh46ODvWPmrMzF9uws8
+iTpAmgIw204a
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA4i3j/gfuoOi7Y7jBk2dyEE6OOjeWQxJuGGIlFRue3MwRnfG/
+A0Ud3zUvwcZm/uFHyXR+L4nDFBbU4DkLzlR77Mci0SpBzpiGjQumnihrEGgHsjbU
+Em7fSgB4o0aUwsGjXeDUjbR7JWei2/fPuITlDCmBnnGV0DcEWQSdF++nQgQ3N8YX
+Hq70IjUERRww4yel5+9oyTHh6slM54qyXbAJr6wT3jcdgyhO4i4VaomXbjtVmAGs
+XSWmyWulDHhXtnoh2Aho9ij4t6ouXZoIGoA8snCgHtEpc53KHCEe+yGbcQbKtXbX
+w2LeUp2pbKIqlVqhWHv9uesaWLZb/bGQKifhQwIDAQABAoIBAQDFYfkK0w9L+261
+SyIbqnYfhv6WDbajV+0eeGAWOKF93NUu+i6RAvtbtIW13Jg7rIxCYdhRUi8dVAN4
+njAQYyg27V4UHYWKbw9U/artcSZmDfNRconGgF16rkiZbNob0HLqVXAJLk0dyoCU
+6IGtbMSaxYoppMRyDeFMcjtKDUnw0CrFmouC/DgoZ9GFUTbEagkV0pG+/+jxj1Ps
+XNtqAvcFdleXlZLtJhGknCf60HcK9GaxI18+pMFC6W0Anfg/QPJennexyV2s3lbA
+LilhfxW7g9UMBrA//HwezNLc5zyLB8KUz4tV29ziFZpvMZAeUbNixNCANyrcy7RV
+tw+svTvpAoGBAPkjLjjx2f8l5mdFoJiOY9UUEUBuaEWgLHuGt2GfaEvF2W5cth1u
+7hw2prYtsL8Ca6iKahK6VjjPAqKxoYzQnjeIIkhIQ/2abWi83Lnjwvq6dNeyj7lh
+K3+KL62A/xDahfG8HZrDGi4BhTw0MUMSEF5xjMzBQk3N4a/GOxIIbYqNAoGBAOho
+0WzX0/ZwAA78Ks5YdWNjZio+1yoQgMOhDbhekjgU1PAhm5hHtzKZkA/Zppxvd1jF
+TadZwHdtu62b8rcExj+QuN5iDlwx1zdRW1Jgy1xbX0dsUKMlP0Sf5TLAKaJJmmBX
+YHrbzrr4VlLsqUCRvn9PHlYojOPs69zXwz3+uI8PAoGBAIvsvmEtNIqg9q655GDK
+WDesdaQCXn38X/9gwk4KAcHM9TmOyJnvW7xs1WUsdEBTU7PtSXYLQbHWUlyd92Xn
+JXV6+AYw0D73JMvWhwHAchnv7v/WQfKUKKIRMoX4FUmZ8fC6/sWVHncIU5Rkm+ZX
+lun0TGgTgvG/2Cmo5DRUl3FhAoGBALUJ6ZE6sr92UWVa41FnsNGh/VSNLPh0cIlz
+bIehC4+qEpGX7Gd7/eXpn0HpjpKvda1tzGa/UGD31smPAEu26WNcrdV1VrBUlsxd
+kKCkC+W+u4Kcilf7zMP9NgIJlKT5ZssDZYFutiQJDN19wv4sSdNL41rELbPiu3yF
+im5BfKzbAoGARIQRG5tcfm7If3uxLmswK0MRQtiru6n8umqPUAm5TRkHGaE5bp8+
+M3eeqn8gyfvMGVo0mLDt1a1ZAw0w5ea65nW1bxSor/LZ/i27kJ24S6fm1NT+i5SW
+DNXD1MGNCp+LBSJT473ifVSBTL6KLQyMQUhRFO3TNsL+azKPhvxd6xY=
+-----END RSA PRIVATE KEY-----

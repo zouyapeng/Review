@@ -1,0 +1,28 @@
+<table class="table table-condensed table-bordered table-striped">
+  <tr>
+        <th>名称</th>
+        <th class="col-xs-2">用户</th>
+        <th class="col-xs-4">完成的时间</th>
+    </tr>
+    <tr ng-repeat="obj in resource.items">
+        <td><a ng-href="{[CBS_URL]}cbs/buildinfo?buildID={[obj.build_id]}">{[obj.nvr]}</a></td>
+        <td>{[obj.owner_name]}</td>
+        <td>{[obj.completion_time.split('.')[0]]}</td>
+    </tr>
+
+</table>
+<div ng-show="resource&&resource.total_count>=0" class="text-right">
+    <div class="pull-left">
+        <span>第 <b>{[resource.start]}</b>–<b>{[resource.offset>resource.total_count?resource.total_count:resource.offset]}</b> 个，共 <b>{[resource.total_count]}</b> 个</span>
+    </div>
+      <pagination
+              total-items="resource.total_count"
+              ng-model="currentPage"
+              items-per-page="resource.limit"
+              max-size="5"
+              class="pagination-sm"
+              boundary-links="true"
+              ng-change="resource.goPage(true, currentPage)"
+              rotate="false"
+              num-pages="numPages"></pagination>
+</div>

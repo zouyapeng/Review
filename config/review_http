@@ -1,0 +1,27 @@
+server {
+        listen 8000;
+        root /var/www/review;
+
+        location ~ ^(/static/) {
+                root /var/www/review;
+                expires 7d;
+                access_log   off;
+        }
+        location ~ ^(/media/) {
+                root /var/www/review;
+                access_log   off;
+        }
+
+        location ~* ^.+\.(jpg|jpeg|gif|png|ico|css|zip|tgz|gz|rar|bz2|doc|xls|exe|pdf|ppt|txt|tar|mid|midi|wav|bmp|rtf|js|mov) {
+                access_log   off;
+        }
+
+
+        access_log /var/log/nginx/review_access.log;
+        error_log /var/log/nginx/review_error.log;
+        location / {
+                include uwsgi_params;
+                uwsgi_pass unix:///tmp/review.socket;
+        }
+}
+

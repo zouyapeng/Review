@@ -1,0 +1,46 @@
+{% load compress %}<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>更新管理平台</title>
+    <base href="/">
+    {% compress css file %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}bower_components/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}bower_components/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}style/app.css">
+    {% endcompress %}
+</head>
+<body>
+
+<div class="page-wrapper" ui-view></div>
+{% compress js file %}
+<script src="{{ STATIC_URL }}bower_components/jquery/dist/jquery.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular/angular.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular-animate/angular-animate.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="{{ STATIC_URL }}bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/services.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/directives.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/app.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/states.js"></script>
+<script>
+    angular.module('app').run(['$rootScope', '$state', '$stateParams', '$timeout',
+                function ($rootScope, $state, $stateParams, $timeout) {
+
+                    $rootScope.$state = $state;
+                    $rootScope.$stateParams = $stateParams;
+                    $rootScope.STATIC_URL = "{{ STATIC_URL }}";
+                    $rootScope.CBS_URL = "{{ CBS_URL }}";
+{% autoescape off %}
+                    $rootScope.SIGNIN_URL = "{{ uri }}";
+{% endautoescape %}
+		}
+            ]
+    )
+</script>
+{% endcompress %}
+</body>
+</html>
